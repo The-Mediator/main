@@ -45,12 +45,12 @@ ___________________________
 The idea of this example and a little bit of this research is to understand an effective way to summarize articles on the web when pointed to a places to get text. One is a fully txt file on the web and another is a wiki page. If you run the application it does show a brief summary of the content in a decent manner. We may want to increase the number of lines to give back to the user but that can be simply be changed in the summarized function.
 
 The algorithm that is being used is based on the page ranking used in google. The idea is the text is ranked to different depending on the content of the information. More specifically the text ranking has two different way... Extractive or Abstractive
-I personally prefer Extractive because it does give you more detail which is why I use GENSIM.
+I personally prefer Abstractive because it does give you more detail which is why I use GENSIM.
 
 "
-Extractive summarization is basically creating a summary based on strictly what you get in the text. It can be compared to copying down the main points of a text without any modification to those points and rearranging the order of that points and the grammar to make more sense out of the summary.
+Extractive summarization consists in scoring words/sentences a using it as summary. You can see hit as highlighting a text or cutting/pasting in that you don’t actually produce a new text, you just select (extract) some parts.
 
-Abstractive summarization techniques tend to mimic the process of ‘paraphrasing’ from a text than just simply summarizing it. Texts summarized using this technique looks more human-like and produce more condensed summaries. These techniques are much harder to implement than extractive summarization techniques in general.
+Abstractive summarization techniques aims to produce a whole new text from it “understanding” of the input. It implies to be able to actually generate a syntactically/grammatically correct text and a semantically relevant one.
 "
 
 
@@ -65,3 +65,5 @@ https://rare-technologies.com/text-summarization-with-gensim/
 https://radimrehurek.com/gensim/index.html
 https://www.quora.com/Natural-Language-Processing-What-is-the-difference-between-extractive-and-abstractive-summarization
 https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf (Nice Read but not really a need.)
+https://radimrehurek.com/gensim/
+https://rare-technologies.com/text-summarization-in-python-extractive-vs-abstractive-techniques-revisited/
